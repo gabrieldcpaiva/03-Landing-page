@@ -1,22 +1,94 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
-
-/* Fontawesome */
-@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
-
-/* Utilities */
 body {
   margin: 0;
-  font-family: Open Sans;
+  text-align: center;
+  background: rgb(230,230,230);
+  color: rgb(40,40,40);
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+#banner h1 {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 0 5px #2F2F2F;
+  color: #D23333;
+  font-weight: lighter;
+  font-size: 70px;
+}
+h2 {
+  margin-top: .1em;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 3px #4D4C49;
+  color: #D23333;
+  font-weight: lighter;
+  font-size: 40px;
+}
+div {
+  padding: 30px;
+}
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(https://i.picsum.photos/id/1042/1000/600.jpg);
+  background-size: cover;
+  background-position: 40%;
+
+}
+#banner a {
+  transition: .5s;
+  margin: 1em;
+  box-shadow: 2px 2px 5px #325879;
+}
+#important-line {
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgb(230, 230, 230);
 }
 
-h1, h2, h3, h4 {
-  font-family: Poppins;
+.card {
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
 }
 
-a {
-  text-decoration: none;
+@media (min-width: 576px){
+  .col-sm-6:last-child {
+    flex: 1 0 auto;
+    max-width: 100%;
+  }
 }
 
-/* Custom design below! */
+@media (min-width: 768px){
+  .col-md-3:last-child {
+  flex: 0 0 25%;
+  max-width: 25%;
+  }
+}
 
+#footer {
+  background-color: rgb(40, 40, 40, .5);
+  width: 100%;
+  color: rgb(210, 210, 210);
+  font-size: 20px;
+  padding: 5px;
+}
+#footer a {
+  transition: .5s;
+  color: lightgrey;
+  font-size: 20px;
+}
+#footer a:hover {
+  color: white;
+}
+
+.list li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
